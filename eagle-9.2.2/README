@@ -1,0 +1,29 @@
+-- Linux Graphics Driver Issues
+Nouveau (Open Source driver for nVidia cards) may cause sporadic crashes during the login procedure.
+Enable software rendering in libGL by setting LIBGL_ALWAYS_SOFTWARE to 1.
+export LIBGL_ALWAYS_SOFTWARE=1
+./eagle
+
+-- Various WebEngine errors
+EAGLE pass '--ignore-gpu-blacklist' to Chromium by default.
+If you encounter issues with HTML content including bugs in WebGL then set QTWEBENGINE_CHROMIUM_FLAGS environment variable to “--ignore-gpu-blacklist=false” and run EAGLE:
+> QTWEBENGINE_CHROMIUM_FLAGS=“--ignore-gpu-blacklist” ./eagle
+
+-- OpenSUSE/SUSE Linux
+If you encounter a 'Check failed: base::i18n::InitializeICU() error when launching EAGLE, please try copying the icudtl.dat file from the libexec directory to the EAGLE directory:
+cp libexec/icudtl.dat .
+
+-- CentOS: version `CXXABI_1.3.8' not found
+On CentOS /lib64/libstdc++.so.6 doens't have required version CXXABI.
+EAGLE fails with:
+/lib64/libstdc++.so.6 version `CXXABI_1.3.8' not found (required by ..../lib/libicuuc.so.55)
+Solution:
+Run eagle from command line 'LD_LIBRARY_PATH=/usr/lib64 ./eagle'
+
+-- Could not initialize GLX
+If you see bellow error when start EAGLE:
+  > ./eagle
+  Could not initialize GLX
+  Aborted (core dumped)
+then run EAGLE with next environment variable:
+  > QT_XCB_GL_INTEGRATION=xcb_egl ./eagle
