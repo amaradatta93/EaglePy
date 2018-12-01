@@ -46,8 +46,8 @@ def create_xml(l_grp, r_grp, left, right, name, template, pin_map):
     l_spacing = height / (left + 1)
     r_spacing = height / (right + 1)
 
-    x_neg = - width / 2.
-    x_pos = width / 2.
+    x_neg = width / 2.
+    x_pos = -width / 2.
     y_pos = height / 2.
     y_neg = - height / 2.
 
