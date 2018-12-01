@@ -59,13 +59,13 @@ def create_xml(l_grp, r_grp, left, right, name, template, pin_map):
     connections = "\n"
     y = y_pos - l_spacing
     for g in l_grp:
-        xml += create_pin(g.name, x_neg, y, g.side)
+        xml += create_pin(g.name, x_neg - 5, y, g.side)
         connections += create_connect(g.name, pin_map[g.name])
         y -= l_spacing
 
     y = y_pos - r_spacing
     for g in r_grp:
-        xml += create_pin(g.name, x_pos, y, g.side)
+        xml += create_pin(g.name, x_pos + 5, y, g.side)
         connections += create_connect(g.name, pin_map[g.name])
         y -= r_spacing
 
