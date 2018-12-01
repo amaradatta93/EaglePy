@@ -491,37 +491,37 @@
 </package>
 </packages>
 <symbols><symbol name="XCF32P">
-<wire x1="22.5" y1="50.0" x2="-22.5" y2="50.0" width="0.41" layer="94"/>
-<wire x1="-22.5" y1="50.0" x2="-22.5" y2="-50.0" width="0.41" layer="94"/>
-<wire x1="-22.5" y1="-50.0" x2="22.5" y2="-50.0" width="0.41" layer="94"/>
-<wire x1="22.5" y1="-50.0" x2="22.5" y2="50.0" width="0.41" layer="94"/>
-<pin name="BUSY" x="22.5" y="41.6666666667" length="middle" rot="R180"/>
-<pin name="CE" x="22.5" y="33.3333333333" length="middle" rot="R180"/>
-<pin name="CF" x="22.5" y="25.0" length="middle" rot="R180"/>
-<pin name="CLK" x="22.5" y="16.6666666667" length="middle" rot="R180"/>
-<pin name="EN_EXT_SEL" x="22.5" y="8.33333333333" length="middle" rot="R180"/>
-<pin name="OE_RESET" x="22.5" y="-1.06581410364e-14" length="middle" rot="R180"/>
-<pin name="REV_SEL0" x="22.5" y="-8.33333333333" length="middle" rot="R180"/>
-<pin name="REV_SEL1" x="22.5" y="-16.6666666667" length="middle" rot="R180"/>
-<pin name="TCK" x="22.5" y="-25.0" length="middle" rot="R180"/>
-<pin name="TDI" x="22.5" y="-33.3333333333" length="middle" rot="R180"/>
-<pin name="TMS" x="22.5" y="-41.6666666667" length="middle" rot="R180"/>
-<pin name="VCCINT" x="-22.5" y="44.1176470588" length="middle"/>
-<pin name="VCCJ" x="-22.5" y="38.2352941176" length="middle"/>
-<pin name="VCCO" x="-22.5" y="32.3529411765" length="middle"/>
-<pin name="CEO" x="-22.5" y="26.4705882353" length="middle"/>
-<pin name="CLKOUT" x="-22.5" y="20.5882352941" length="middle"/>
-<pin name="D0" x="-22.5" y="14.7058823529" length="middle"/>
-<pin name="D1" x="-22.5" y="8.82352941176" length="middle"/>
-<pin name="D2" x="-22.5" y="2.94117647059" length="middle"/>
-<pin name="D3" x="-22.5" y="-2.94117647059" length="middle"/>
-<pin name="D4" x="-22.5" y="-8.82352941176" length="middle"/>
-<pin name="D5" x="-22.5" y="-14.7058823529" length="middle"/>
-<pin name="D6" x="-22.5" y="-20.5882352941" length="middle"/>
-<pin name="D7" x="-22.5" y="-26.4705882353" length="middle"/>
-<pin name="TDO" x="-22.5" y="-32.3529411765" length="middle"/>
-<pin name="DNC" x="-22.5" y="-38.2352941176" length="middle"/>
-<pin name="GND" x="-22.5" y="-44.1176470588" length="middle"/>
+<wire x1="-22.5" y1="50.0" x2="22.5" y2="50.0" width="0.41" layer="94"/>
+<wire x1="22.5" y1="50.0" x2="22.5" y2="-50.0" width="0.41" layer="94"/>
+<wire x1="22.5" y1="-50.0" x2="-22.5" y2="-50.0" width="0.41" layer="94"/>
+<wire x1="-22.5" y1="-50.0" x2="-22.5" y2="50.0" width="0.41" layer="94"/>
+<pin name="BUSY" x="-22.5" y="41.6666666667" length="middle" />
+<pin name="CE" x="-22.5" y="33.3333333333" length="middle" />
+<pin name="CF" x="-22.5" y="25.0" length="middle" />
+<pin name="CLK" x="-22.5" y="16.6666666667" length="middle" />
+<pin name="EN_EXT_SEL" x="-22.5" y="8.33333333333" length="middle" />
+<pin name="OE_RESET" x="-22.5" y="-1.06581410364e-14" length="middle" />
+<pin name="REV_SEL0" x="-22.5" y="-8.33333333333" length="middle" />
+<pin name="REV_SEL1" x="-22.5" y="-16.6666666667" length="middle" />
+<pin name="TCK" x="-22.5" y="-25.0" length="middle" />
+<pin name="TDI" x="-22.5" y="-33.3333333333" length="middle" />
+<pin name="TMS" x="-22.5" y="-41.6666666667" length="middle" />
+<pin name="VCCINT" x="22.5" y="44.1176470588" length="middle" rot="R180"/>
+<pin name="VCCJ" x="22.5" y="38.2352941176" length="middle" rot="R180"/>
+<pin name="VCCO" x="22.5" y="32.3529411765" length="middle" rot="R180"/>
+<pin name="CEO" x="22.5" y="26.4705882353" length="middle" rot="R180"/>
+<pin name="CLKOUT" x="22.5" y="20.5882352941" length="middle" rot="R180"/>
+<pin name="D0" x="22.5" y="14.7058823529" length="middle" rot="R180"/>
+<pin name="D1" x="22.5" y="8.82352941176" length="middle" rot="R180"/>
+<pin name="D2" x="22.5" y="2.94117647059" length="middle" rot="R180"/>
+<pin name="D3" x="22.5" y="-2.94117647059" length="middle" rot="R180"/>
+<pin name="D4" x="22.5" y="-8.82352941176" length="middle" rot="R180"/>
+<pin name="D5" x="22.5" y="-14.7058823529" length="middle" rot="R180"/>
+<pin name="D6" x="22.5" y="-20.5882352941" length="middle" rot="R180"/>
+<pin name="D7" x="22.5" y="-26.4705882353" length="middle" rot="R180"/>
+<pin name="TDO" x="22.5" y="-32.3529411765" length="middle" rot="R180"/>
+<pin name="DNC" x="22.5" y="-38.2352941176" length="middle" rot="R180"/>
+<pin name="GND" x="22.5" y="-44.1176470588" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
