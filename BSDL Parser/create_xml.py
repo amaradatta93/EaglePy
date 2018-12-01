@@ -21,7 +21,7 @@ def create_pin(nm, x, y, side):
     s += '" x="' + str(x)
     s += '" y="' + str(y)
     if side == "right":
-        s += '" length="middle" rot="R180"/>\n'
+        s += '" length="middle" rot="R180"/>\n' #rotate the pins by 360 to make it inwards facing
     else:
         s += '" length="middle" />\n'
     return s
@@ -59,13 +59,13 @@ def create_xml(l_grp, r_grp, left, right, name, template, pin_map):
     connections = "\n"
     y = y_pos - l_spacing
     for g in l_grp:
-        xml += create_pin(g.name, x_neg - 5, y, g.side)
+        xml += create_pin(g.name, x_neg - 5, y, g.side)         # Add the length of the pin to the x-coordinate
         connections += create_connect(g.name, pin_map[g.name])
         y -= l_spacing
 
     y = y_pos - r_spacing
     for g in r_grp:
-        xml += create_pin(g.name, x_pos + 5, y, g.side)
+        xml += create_pin(g.name, x_pos + 5, y, g.side)         # Add the length of the pin to the x-coordinate
         connections += create_connect(g.name, pin_map[g.name])
         y -= r_spacing
 
